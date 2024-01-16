@@ -3,5 +3,17 @@
     <string name="retry">Coba lagi</string>
     <string name="menu_1">Menu 1</string>
     <string name="menu_2">Menu 2</string>
+    <string name="description">Description</string>
+    <string name="job_specification">Job Specification</string>
+    <string name="website">Website</string>
+    <string name="location">Location</string>
+    <string name="company_name">Company Name</string>
+    <string name="company">Company</string>
+    <string name="title">Title</string>
+    <string name="job_title_name">Job Title Name</string>
+    <string name="fulltime">Fulltime</string>
+    <string name="yes_no">Yes No</string>
+    <string name="jobdescription_lorem_ipsum_dolor_si_amet">JobDescription Lorem Ipsum Dolor si amet</string>
+    <string name="company_picture">company picture</string>
 
 </resources>

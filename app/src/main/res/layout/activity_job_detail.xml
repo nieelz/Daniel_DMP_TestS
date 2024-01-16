@@ -11,9 +11,10 @@
         android:id="@+id/tv_Company"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Company"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/company"
+        android:contentDescription="@string/company"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Company Name"
+        android:layout_marginEnd="8dp"
+        android:text="@string/company_name"
+        android:contentDescription="@string/company_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -38,7 +41,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Location"
+        android:layout_marginEnd="8dp"
+        android:text="@string/location"
+        android:contentDescription="@string/location"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,31 +56,35 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:autoLink="web"
-        android:text="Website"
+        android:text="@string/website"
+        android:contentDescription="@string/website"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/company_picture"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_Company" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_Company"
+        tools:src="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tv_desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
-        android:text="Job Specification"
+        android:text="@string/job_specification"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000"
+        android:contentDescription="@string/description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -85,7 +94,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="Title"
+        android:text="@string/title"
+        android:contentDescription="@string/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
 
@@ -95,7 +105,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Job Title Name"
+        android:text="@string/job_title_name"
+        android:contentDescription="@string/job_title_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
@@ -106,7 +117,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Fulltime"
+        android:text="@string/fulltime"
+        android:contentDescription="@string/fulltime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvJobTitle" />
 
@@ -116,7 +128,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Yes No"
+        android:text="@string/yes_no"
+        android:contentDescription="@string/yes_no"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_fulltime" />
@@ -127,13 +140,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Description"
+        android:text="@string/description"
+        android:contentDescription="@string/description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvyesno" />
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_description">
 
         <TextView
@@ -142,7 +158,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="JobDescription Lorem Ipsum Dolor si amet"
+            android:contentDescription="@string/jobdescription_lorem_ipsum_dolor_si_amet"
+            android:text="@string/jobdescription_lorem_ipsum_dolor_si_amet"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     </ScrollView>
 

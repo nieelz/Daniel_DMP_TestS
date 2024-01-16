@@ -1,14 +1,10 @@
 package com.danielw.danieldmptests.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Html
 import androidx.activity.viewModels
-import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
-import com.danielw.danieldmptests.R
 import com.danielw.danieldmptests.databinding.ActivityJobDetailBinding
-import com.danielw.danieldmptests.network.JobResponse
 import com.danielw.danieldmptests.network.JobResponseItem
 import com.google.gson.Gson
 
@@ -30,9 +26,6 @@ class JobDetailActivity : AppCompatActivity() {
         val jobResponseItemJson = Gson().fromJson(id, JobResponseItem::class.java)
 
         viewModel.setJob(jobResponseItemJson)
-
-
-
 
         viewModel.detailAccount().observe(this) {
             showUserData(it)
